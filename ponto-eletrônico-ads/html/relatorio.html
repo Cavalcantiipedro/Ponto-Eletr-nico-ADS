@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Pontos</title>
+    <link rel="stylesheet" href="../css/relatorio.css">
+</head>
+<body>
+
+    <dialog id="modal-editar">
+        <form method="dialog">
+            <h3>Editar Registro</h3>
+            <label for="tipo-editar">Tipo:</label>
+            <select id="tipo-editar">
+                <option value="Entrada">Entrada</option>
+                <option value="Intervalo">Intervalo</option>
+                <option value="Volta-Intervalo">Volta-Intervalo</option>
+                <option value="Saida">Saida</option>
+            </select>
+    
+            <label for="data-editar">Data (DD-MM-YYYY):</label>
+            <input type="text" id="data-editar" placeholder="DD-MM-YYYY" />
+    
+            <button id="btn-confirmar-editar">Confirmar</button>
+            <button id="btn-cancelar-editar">Cancelar</button>
+        </form>
+    </dialog>
+    
+
+    <dialog id="modal-justificativa">
+        <h3>Adicionar Justificativa</h3>
+        <input type="date" id="data-falta" placeholder="Data da falta">
+        <textarea id="justificativa" placeholder="Justificativa"></textarea>
+        <button id="btn-enviar-justificativa">Enviar Justificativa</button>
+        <button id="btn-cancelar-justificativa">Cancelar</button>
+    </dialog>
+    
+    <button id="btn-adicionar-justificativa">Adicionar justificativa para falta</button>
+    
+    <div id="container-registros"></div>
+    <script src="../js/relatorio.js"></script>
+</body>
+</html>
